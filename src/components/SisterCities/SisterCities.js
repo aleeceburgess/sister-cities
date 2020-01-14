@@ -8,8 +8,16 @@ export const SisterCities = props => {
     }
 
     return (
-      <div key={i}>
-        <h1>{city.mainCity}</h1>
+      <div className="city-card" key={i}>
+        {city.mainCity.map((mainCity, j) => {
+          return (
+            <div className="city-card__header" key={j}>
+              <h2>{mainCity.name}</h2>
+              <span className="longlat">long: {mainCity.lon}</span>
+              <span className="longlat">lat: {mainCity.lat}</span>
+            </div>
+          );
+        })}
         <ul>{sisterCityList}</ul>
       </div>
     );
