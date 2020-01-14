@@ -13,8 +13,6 @@ export const SisterCities = props => {
           return (
             <div className="city-card__header" key={j}>
               <h2>{mainCity.name}</h2>
-              <span className="longlat">long: {mainCity.lon}</span>
-              <span className="longlat">lat: {mainCity.lat}</span>
             </div>
           );
         })}

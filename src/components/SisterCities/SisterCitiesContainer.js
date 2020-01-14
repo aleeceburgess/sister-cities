@@ -50,9 +50,7 @@ class SisterCitiesContainer extends React.Component {
         condensedCitites.push({
           mainCity: [
             {
-              name: newCityName,
-              lon: this.getLongLat(newCityName),
-              lat: this.getLongLat(newCityName)
+              name: newCityName
             }
           ],
           sisterCities: [newSisterCityName]
